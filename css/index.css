@@ -133,7 +133,7 @@ html {
 body {
   width: 100%;
   margin: 0, auto;
-  background-image: url("DisneyImage1");
+  background-color: #EBFFFE;
 }
 h2 {
   font-family: 'Acme';
@@ -249,7 +249,7 @@ p {
   border-radius: 10px;
 }
 #MainContent .FirstSignUp .bodyImage {
-  width: 99%;
+  width: 98%;
   margin-bottom: 2vh;
 }
 #MainContent .FirstSignUp .bodyImage img {
