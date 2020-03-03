@@ -1,3 +1,33 @@
+.buttonMix {
+  display: block;
+  background-color: #FFFEA0;
+  border: solid #C4BA20 2px;
+  margin: 11px 0;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+  width: 30%;
+  height: 6vh;
+  font-size: 4rem;
+  border-radius: 10px;
+}
+@media (max-width: 700px) {
+  .buttonMix {
+    width: 75%;
+  }
+}
+.buttonMix a {
+  text-decoration: none;
+  color: #7A7300;
+  font-family: 'Acme';
+}
+.buttonMix:hover {
+  background-color: white;
+  border-color: #FFFEA0;
+}
+.buttonMix:hover a {
+  color: #FFFEA0;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -135,6 +165,11 @@ body {
   margin: 0, auto;
   background-color: #EBFFFE;
 }
+h1 {
+  font-family: 'Acme';
+  color: Darkblue;
+  font-size: 6rem;
+}
 h2 {
   font-family: 'Acme';
   color: Darkblue;
@@ -143,37 +178,12 @@ h2 {
 h3 {
   font-family: 'Acme';
   color: Darkblue;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 p {
   font-family: 'Domine';
   font-size: 1.5rem;
   line-height: 2rem;
-}
-.button {
-  display: block;
-  background-color: #FFFEA0;
-  border: solid #C4BA20 2px;
-  margin: 11px 0;
-  text-align: center;
-  padding: 10px 0;
-  cursor: pointer;
-  width: 32%;
-  height: 6vh;
-  font-size: 4rem;
-  border-radius: 10px;
-}
-.button a {
-  text-decoration: none;
-  color: #7A7300;
-  font-family: 'Acme';
-}
-.button:hover {
-  background-color: white;
-  border-color: #FFFEA0;
-}
-.button:hover a {
-  color: #FFFEA0;
 }
 #Header {
   display: flex;
@@ -183,6 +193,13 @@ p {
   align-items: center;
   justify-content: space-between;
   background-color: darkblue;
+}
+@media (max-width: 700px) {
+  #Header {
+    flex-direction: column;
+    height: auto;
+    padding: 2vh 0;
+  }
 }
 #Header #LogoContainer {
   display: flex;
@@ -198,16 +215,43 @@ p {
   color: steelblue;
   font-family: 'Acme';
 }
+@media (max-width: 800px) {
+  #Header #LogoContainer h2 {
+    font-size: 4rem;
+  }
+}
 #Header nav {
   width: 50%;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 700px) {
+  #Header nav {
+    width: 90%;
+    margin-top: 2vh;
+  }
+}
+@media (max-width: 500px) {
+  #Header nav {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    border: steelblue solid 1px;
+  }
 }
 #Header nav a {
   font-family: 'Acme';
   font-size: 3rem;
   text-decoration: none;
   color: steelblue;
+}
+@media (max-width: 500px) {
+  #Header nav a {
+    border: steelblue solid 1px;
+    padding: 1vh 0;
+    width: 100%;
+    text-align: center;
+  }
 }
 #Header nav a:hover {
   color: #FFFEA0;
@@ -234,6 +278,7 @@ p {
   color: white;
   font-size: 3rem;
 }
+/* Page Styles */
 #MainContent {
   width: 95%;
   margin: 0 auto;
@@ -241,6 +286,11 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  #MainContent {
+    width: 100%;
+  }
 }
 #MainContent .FirstSignUp {
   width: 80%;
@@ -253,19 +303,86 @@ p {
   align-items: center;
   border-radius: 10px;
 }
+@media (max-width: 700px) {
+  #MainContent .FirstSignUp {
+    width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  #MainContent .FirstSignUp {
+    width: 100%;
+    border-radius: 0px;
+  }
+}
 #MainContent .FirstSignUp .bodyImage {
   width: 98%;
   margin-bottom: 2vh;
 }
+@media (max-width: 500px) {
+  #MainContent .FirstSignUp .bodyImage {
+    width: 100%;
+  }
+}
 #MainContent .FirstSignUp .bodyImage img {
   width: 100%;
   border: solid Darkblue 2px;
+}
+@media (max-width: 500px) {
+  #MainContent .FirstSignUp .bodyImage img {
+    border-left: none;
+    border-right: none;
+  }
 }
 #MainContent .FirstSignUp p {
   width: 98%;
   margin: 1.5vh 0;
   text-align: justify;
   color: Darkblue;
+}
+@media (max-width: 500px) {
+  #MainContent .FirstSignUp p {
+    width: 90%;
+  }
+}
+#MainContent .FirstSignUp .button {
+  display: block;
+  background-color: #FFFEA0;
+  border: solid #C4BA20 2px;
+  margin: 11px 0;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+  width: 30%;
+  height: 6vh;
+  font-size: 4rem;
+  border-radius: 10px;
+}
+@media (max-width: 700px) {
+  #MainContent .FirstSignUp .button {
+    width: 75%;
+  }
+}
+#MainContent .FirstSignUp .button a {
+  text-decoration: none;
+  color: #7A7300;
+  font-family: 'Acme';
+}
+#MainContent .FirstSignUp .button:hover {
+  background-color: white;
+  border-color: #FFFEA0;
+}
+#MainContent .FirstSignUp .button:hover a {
+  color: #FFFEA0;
+}
+#MainContent #AboutImage {
+  width: 100%;
+  height: 40vh;
+  margin-top: 2vh;
+}
+#MainContent #AboutImage img {
+  width: 100%;
+  height: 40vh;
+  object-fit: fill;
 }
 #MainContent .AboutHeader {
   display: flex;
@@ -276,28 +393,56 @@ p {
 }
 #MainContent .AboutHeader p {
   text-align: center;
+  margin-top: 2vh;
 }
 #MainContent .AboutContent {
   width: 90%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 #MainContent .AboutContent .Profile {
   width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 5vh 0;
+}
+@media (max-width: 500px) {
+  #MainContent .AboutContent .Profile {
+    width: 100%;
+  }
 }
 #MainContent .AboutContent .Profile .AboutPicture {
-  width: 90%;
+  width: 75%;
 }
 #MainContent .AboutContent .Profile .AboutPicture img {
   width: 100%;
   height: auto;
   border-radius: 50%;
 }
+#MainContent .AboutContent .Profile h3 {
+  text-align: center;
+  margin: 2vh 0;
+}
+#MainContent .AboutContent .Profile p {
+  text-align: center;
+  margin: 2vh 0;
+}
 #MainContent .AboutContent .Profile.first {
   flex-direction: column;
+  padding: 0.25vh 0;
+  border-bottom: dashed Darkblue 2px;
 }
 #MainContent .AboutContent .Profile.second {
   flex-direction: column-reverse;
+  padding: 0.25vh 0;
+  border-top: dashed Darkblue 2px;
+}
+@media (max-width: 500px) {
+  #MainContent .AboutContent .Profile.second {
+    flex-direction: column;
+    border-top: none;
+    border-bottom: dashed Darkblue 2px;
+  }
 }
