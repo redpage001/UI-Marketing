@@ -35,4 +35,51 @@
             color: @DisneySecondColor;
         }
     }
+
+// About Page Starts Here
+
+    .AboutHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+        margin: 2vh 0;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .AboutContent {
+        width: 90%;
+        display: flex;
+
+        .Profile {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            .AboutPicture {
+                width: 90%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .Profile.first {
+            flex-direction: column;
+        }
+
+        .Profile.second {
+            flex-direction: column-reverse;
+        }
+    }
 }
+
+
+

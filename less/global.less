@@ -9,10 +9,21 @@ body {
     background-color: #EBFFFE;
 }
 
+h1 {
+    font-family: @DisneyHeaderFont;
+    color: @DisneySecondColor;
+    font-size: 6rem;
+
 h2 {
     font-family: @DisneyHeaderFont;
     color: @DisneySecondColor;
     font-size: 4rem;
+}
+
+h3 {
+    font-family: @DisneyHeaderFont;
+    color: @DisneySecondColor;
+    font-size: 2rem;
 }
 
 p {
@@ -22,30 +33,5 @@ p {
 }
 
 .button {
-    display: block;
-    background-color: @DisneyYellowLight;
-    border: solid #C4BA20 2px;
-    margin: 11px 0;
-    text-align: center;
-    padding: 10px 0;
-    cursor: pointer;
-    width: 32%;
-    height: 6vh;
-    font-size: 4rem;
-    border-radius: 10px;
-    
-        a {
-            text-decoration: none;
-            color: #7A7300;
-            font-family: @DisneyHeaderFont;
-        }
-
-    &:hover {
-        background-color:white; 
-        border-color: @DisneyYellowLight;;
-
-        a{
-            color: @DisneyYellowLight;   
-        }
-    }
+    .buttonMix();
 }
