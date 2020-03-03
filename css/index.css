@@ -134,13 +134,40 @@ body {
   width: 100%;
   margin: 0, auto;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   font-family: 'Acme';
+  color: Darkblue;
+  font-size: 4rem;
+}
+p {
+  font-family: 'Domine';
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.button {
+  display: block;
+  background-color: #FFFEA0;
+  border: solid #C4BA20 2px;
+  margin: 11px 0;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+  width: 32%;
+  height: 6vh;
+  font-size: 4rem;
+  border-radius: 10px;
+}
+.button a {
+  text-decoration: none;
+  color: #7A7300;
+  font-family: 'Acme';
+}
+.button:hover {
+  background-color: white;
+  border-color: #FFFEA0;
+}
+.button:hover a {
+  color: #FFFEA0;
 }
 #Header {
   display: flex;
@@ -175,4 +202,59 @@ h6 {
   font-size: 3rem;
   text-decoration: none;
   color: steelblue;
+}
+#Footer {
+  width: 100%;
+  height: 30vh;
+  padding-top: 5vh;
+  background-color: Darkblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Footer img {
+  width: 60px;
+  height: 60px;
+}
+#Footer h2 {
+  color: #FFFEA0;
+  font-size: 6rem;
+  padding: 2vh 0;
+}
+#Footer p {
+  color: white;
+  font-size: 3rem;
+}
+#MainContent {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#MainContent .FirstSignUp {
+  width: 80%;
+  padding: 3vh 0.5%;
+  margin: 2vh 0;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+#MainContent .FirstSignUp .bodyImage {
+  width: 99%;
+  margin-bottom: 2vh;
+}
+#MainContent .FirstSignUp .bodyImage img {
+  width: 100%;
+  border: solid Darkblue 2px;
+}
+#MainContent .FirstSignUp p {
+  width: 98%;
+  margin: 1.5vh 0;
+  text-align: justify;
+  color: Darkblue;
 }

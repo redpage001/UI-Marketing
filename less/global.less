@@ -1,5 +1,6 @@
 html {
     font-size: 62.5%;
+    
 }
 
 body {
@@ -7,6 +8,43 @@ body {
     margin: 0, auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2 {
     font-family: @DisneyHeaderFont;
+    color: @DisneySecondColor;
+    font-size: 4rem;
+}
+
+p {
+    font-family: @DisneyBodyFont;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.button {
+    display: block;
+    background-color: @DisneyYellowLight;
+    border: solid #C4BA20 2px;
+    margin: 11px 0;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    width: 32%;
+    height: 6vh;
+    font-size: 4rem;
+    border-radius: 10px;
+    
+        a {
+            text-decoration: none;
+            color: #7A7300;
+            font-family: @DisneyHeaderFont;
+        }
+
+    &:hover {
+        background-color:white; 
+        border-color: @DisneyYellowLight;;
+
+        a{
+            color: @DisneyYellowLight;   
+        }
+    }
 }
