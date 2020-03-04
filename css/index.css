@@ -181,8 +181,8 @@ h3 {
 }
 p {
   font-family: 'Domine';
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
 }
 #Header {
   display: flex;
@@ -292,7 +292,7 @@ p {
   }
 }
 #MainContent .FirstSignUp {
-  width: 80%;
+  width: 85%;
   padding: 3vh 0.5%;
   margin: 2vh 0;
   background-color: lightblue;
@@ -335,7 +335,8 @@ p {
 #MainContent .FirstSignUp p {
   width: 98%;
   margin: 1.5vh 0;
-  text-align: justify;
+  text-align: center;
+  line-height: 2.5rem;
   color: Darkblue;
 }
 @media (max-width: 500px) {
@@ -393,6 +394,8 @@ p {
 #MainContent .AboutHeader p {
   text-align: center;
   margin-top: 2vh;
+  line-height: 2.5rem;
+  color: Darkblue;
 }
 #MainContent .AboutContent {
   width: 90%;
@@ -422,6 +425,7 @@ p {
   width: 100%;
   height: auto;
   border-radius: 50%;
+  border: solid white 1px;
 }
 #MainContent .AboutContent .Profile .AboutBio {
   width: 100%;
@@ -432,6 +436,7 @@ p {
 }
 #MainContent .AboutContent .Profile p {
   text-align: center;
+  line-height: 2.5rem;
   margin: 2vh 0;
 }
 #MainContent .AboutContent .Profile .links {
