@@ -114,7 +114,6 @@ mark,
 audio,
 video {
   margin: 0;
-  padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
@@ -188,7 +187,7 @@ p {
 #Header {
   display: flex;
   height: 10vh;
-  padding: 0 2%;
+  padding: 1vh 2%;
   margin-top: 20px;
   align-items: center;
   justify-content: space-between;
@@ -406,20 +405,26 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5vh 0;
+  margin: 4vh 0;
+  padding: 2vh 0;
 }
 @media (max-width: 500px) {
   #MainContent .AboutContent .Profile {
     width: 100%;
+    padding-bottom: 3vh;
   }
 }
 #MainContent .AboutContent .Profile .AboutPicture {
   width: 75%;
+  padding: 1vh 0;
 }
 #MainContent .AboutContent .Profile .AboutPicture img {
   width: 100%;
   height: auto;
   border-radius: 50%;
+}
+#MainContent .AboutContent .Profile .AboutBio {
+  width: 100%;
 }
 #MainContent .AboutContent .Profile h3 {
   text-align: center;
@@ -429,18 +434,38 @@ p {
   text-align: center;
   margin: 2vh 0;
 }
-#MainContent .AboutContent .Profile.first {
-  flex-direction: column;
+#MainContent .AboutContent .Profile .links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
   padding: 0.25vh 0;
+}
+#MainContent .AboutContent .Profile .links img {
+  width: 60px;
+}
+#MainContent .AboutContent .Profile .links img:hover {
+  transform: scale(0.95);
+}
+@media (max-width: 700px) {
+  #MainContent .AboutContent .Profile .links img {
+    width: 40px;
+  }
+}
+@media (max-width: 500px) {
+  #MainContent .AboutContent .Profile .links img {
+    width: 60px;
+  }
+}
+#MainContent .Profile.first {
+  flex-direction: column;
   border-bottom: dashed Darkblue 2px;
 }
-#MainContent .AboutContent .Profile.second {
+#MainContent .Profile.second {
   flex-direction: column-reverse;
-  padding: 0.25vh 0;
   border-top: dashed Darkblue 2px;
 }
 @media (max-width: 500px) {
-  #MainContent .AboutContent .Profile.second {
+  #MainContent .Profile.second {
     flex-direction: column;
     border-top: none;
     border-bottom: dashed Darkblue 2px;
