@@ -184,6 +184,7 @@ p {
   font-size: 1.75rem;
   line-height: 2.25rem;
 }
+/* Nav and Footer Styles */
 #Header {
   display: flex;
   height: 10vh;
@@ -376,12 +377,12 @@ p {
 }
 #MainContent #AboutImage {
   width: 100%;
-  height: 40vh;
+  height: 50vh;
   margin-top: 2vh;
 }
 #MainContent #AboutImage img {
   width: 100%;
-  height: 40vh;
+  height: 50vh;
   object-fit: fill;
 }
 #MainContent .AboutHeader {
